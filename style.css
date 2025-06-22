@@ -1,0 +1,209 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+ 
+html, body {
+  min-height: 100%;
+  width: 100%;
+  background-color: #200C01;
+  color: #e1e1e1;
+  overflow-x: hidden;
+}
+
+main{
+  width: 100vw;
+  min-height: 100vh;
+}
+
+header {
+  height: 9vh;
+  width: 100vw;
+  background-color: #FF6002;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  padding: 5vh 9vw;
+  min-height: 93vh;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  width: 100%;
+}
+
+.para {
+  width: 60%;
+}
+
+.para h2 {
+  font-size: 12vh;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.para p {
+  margin-bottom: 20px;
+  font-size: 3vh;
+}
+
+.favicon {
+  height: 75vh;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favicon img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.download {
+  margin-top: 20vh;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.download h3 {
+  font-size: 3.5vh;
+  margin-bottom: 10px;
+}
+
+.download a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 18vw;
+  padding: 0;
+}
+
+.download img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding: 0;
+}
+
+.choose {
+  margin-top: 18vh;
+}
+
+.choose h3 {
+  font-size: 3.5vh;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.pallete {
+  height: 50vh;
+  width: 100%;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.card i {
+  font-size: 6vh;
+  border: 1px solid #ffffff2e;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card h4 {
+  font-size: 4vh;
+  text-align: center;
+}
+
+.bg-svg {
+  position: absolute;
+  left: 0;
+  bottom: 00px;
+  width: 100vw;
+  height: fit-content;
+}
+
+.bg-svg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 800px) {
+  header {
+    margin-bottom: 30px;
+  }
+  .hero {
+    padding: 0;
+  }
+  .intro {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    gap: 100px;
+  }
+  .intro .para h2 {
+    font-size: 10vh;
+    text-align: center;
+  }
+  .intro .para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .intro .favicon {
+    width: 80vw;
+  }
+  .download h3 {
+    font-size: 5vh;
+  }
+  .download a {
+    height: 14vh;
+    width: fit-content;
+  }
+  .choose h3 {
+    font-size: 5vh;
+    margin-bottom: 180px;
+  }
+  .choose .pallete {
+    flex-direction: column;
+  }
+  .card i {
+    font: 6vh;
+  }
+  .bg-svg{
+    bottom: inherit;
+  }
+}
